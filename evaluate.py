@@ -1,6 +1,6 @@
 import pandas as pd
 from sklearn.metrics import r2_score
-
+import numpy as np
 computed_averages=pd.read_csv('computed_monthly_averages.csv',index_col=0) #Read the output of process
 extracted_averages=pd.read_csv('extracted_monthly_averages.csv',index_col=0) #Read the output of prepare
 

@@ -68,8 +68,8 @@ stages:
       size: 1689
     - path: evaluate.py
       hash: md5
-      md5: 4e399879143521ae650b8a875ce119b5
-      size: 920
+      md5: 798a2936082c8ef40851deadffbaec16
+      size: 1363
     - path: extracted_monthly_averages.csv
       hash: md5
       md5: 3109053b3b34b002b56ca20bc0b08774
