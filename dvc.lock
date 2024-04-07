@@ -38,3 +38,24 @@ stages:
       hash: md5
       md5: cf93d0f6c9a1625d7d309a428385de20
       size: 322
+  process:
+    cmd: python process.py
+    deps:
+    - path: Data/
+      hash: md5
+      md5: 40b0bbdfe6f767f96702b0fd7f40e9eb.dir
+      size: 12517290
+      nfiles: 4
+    - path: list_of_fields.npy
+      hash: md5
+      md5: cf93d0f6c9a1625d7d309a428385de20
+      size: 322
+    - path: process.py
+      hash: md5
+      md5: 8442fe0fa6841102df73810230e80457
+      size: 2360
+    outs:
+    - path: computed_monthly_averages.csv
+      hash: md5
+      md5: 22efe4aa118dd6a7b818a419926864fd
+      size: 2586
