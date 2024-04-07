@@ -1,0 +1,40 @@
+schema: '2.0'
+stages:
+  download:
+    cmd: python download.py
+    deps:
+    - path: download.py
+      hash: md5
+      md5: 0c8a36ce26fb1250f08a89d192e8979b
+      size: 2796
+    params:
+      params.yaml:
+        n_locs: 4
+        year: 2002
+    outs:
+    - path: Data/
+      hash: md5
+      md5: 40b0bbdfe6f767f96702b0fd7f40e9eb.dir
+      size: 12517290
+      nfiles: 4
+  prepare:
+    cmd: python prepare.py
+    deps:
+    - path: Data/
+      hash: md5
+      md5: 40b0bbdfe6f767f96702b0fd7f40e9eb.dir
+      size: 12517290
+      nfiles: 4
+    - path: prepare.py
+      hash: md5
+      md5: 176434348c1901618d8f671ddc04858b
+      size: 3424
+    outs:
+    - path: extracted_monthly_averages.csv
+      hash: md5
+      md5: a233d97b55968a71f473c13e70c02830
+      size: 1412
+    - path: list_of_fields.npy
+      hash: md5
+      md5: cf93d0f6c9a1625d7d309a428385de20
+      size: 322
